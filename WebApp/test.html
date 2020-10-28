@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="style.css"/>
+</head>
+<body>
+<div id="container">
+    <h2 id="header">Readings</h2>
+    <p id="moisturePlant" class="sensVal divs">moisture in plant: C</p>
+    <p id="humidityRoom" class="sensVal divs">humidity inside: %</p>
+    <p id="tempRoom" class="sensVal divs">temp in room: </p>
+    <div class="rangeslider">
+        <input type="range" min="100" max="3000"
+               class="myslider divs" id="sliderRange">
+        <p id="limitVal" class="divs">Limit: <span id="demo"></span></p>
+    </div>
+    <div class="switchdiv divs">
+    <p>SMS alert</p>
+    <label class="switch">
+        <input type="checkbox" id="switch">
+        <span class="slider round"></span>
+    </label>
+    <div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/particle-api-js@8/dist/particle.min.js"></script>
+<script src="test.js"></script>
+</html>
